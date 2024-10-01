@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.videocard>div{
+ width: 100% !important;
+ height: 100% !important;
+}
+
+.display-webkit-box {
+    display: -webkit-box;
+}
+
+.webkit-line-clamp-2 {
+    -webkit-line-clamp: 3;
+}
+
+.webkit-box-orient-vertical {
+    -webkit-box-orient: vertical;
+}
