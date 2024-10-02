@@ -1,0 +1,5 @@
+![screencapture-localhost-5173-register-2024-10-02-15_36_01](https://github.com/user-attachments/assets/54c4884c-4ede-4298-956e-bca84cde9086)
+![screencapture-localhost-5173-signup-2024-10-02-15_35_35](https://github.com/user-attachments/assets/7fd1336a-2c5d-46fa-9948-0b1e07ebec0c)
+![screencapture-localhost-5173-course-1-2024-10-02-15_35_02](https://github.com/user-attachments/assets/54582e21-3f45-4af1-a01d-b93d3210e011)
+![screencapture-localhost-5173-course-2024-10-02-15_34_41](https://github.com/user-attachments/assets/22fd10f4-5a23-4571-bbdb-6511f05b2bea)
+![screencapture-localhost-5173-2024-10-02-15_33_57](https://github.com/user-attachments/assets/27c3957e-3b8a-4092-9c08-f1278ffa5f04)
