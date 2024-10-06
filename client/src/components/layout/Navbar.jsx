@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import {Link} from "react-router-dom"
+import {Link, useLocation} from "react-router-dom"
 import { IoIosMenu } from "react-icons/io";
 const Navbar = () => {
     const [active,setAcitve] = useState('home');
     const [drop,setDrop] = useState(false);
     const [isMenu,setIsMenu] = useState(false);
-    const role="teacher";
+    const role="admin";
+    
     const handleDropActive = (link)=>{
         setAcitve(link);
         setDrop(false);
@@ -13,10 +14,16 @@ const Navbar = () => {
             setIsMenu(!isMenu);
         }
     }
-
+const { pathname } = useLocation();
     
   return (
-    <div className="w-full h-[4rem] bg-[#141414]  text-[#808DA1] flex justify-center items-center fixed top-0 z-50">
+    <div
+      className={
+        pathname === "/deshboard"
+          ? "hidden"
+          : "w-full h-[4rem] bg-[#141414]  text-[#808DA1] flex justify-center items-center fixed top-0 z-50"
+      }
+    >
       <div className="container  flex justify-between items-center">
         <div className="w-[5rem]">
           <img
@@ -67,7 +74,7 @@ const Navbar = () => {
                 active === "blog" && "bg-gray-800 text-white"
               }`}
               onClick={() => setAcitve("blog")}
-              to="/"
+              to="/blog"
             >
               Blog
             </Link>
@@ -88,7 +95,7 @@ const Navbar = () => {
                   active === "sign" && "bg-gray-800 text-white"
                 }`}
                 onClick={() => setAcitve("sign")}
-                to="/"
+                to="/signup"
               >
                 Signup
               </Link>
@@ -105,10 +112,10 @@ const Navbar = () => {
                 <>
                   <Link
                     className={`text-sm font-medium px-3 py-1 rounded-md hover:border hover:border-[white]  ${
-                      active === "profile" && "bg-gray-800 text-white"
+                      active === "deshboard" && "bg-gray-800 text-white"
                     }`}
-                    onClick={() => handleDropActive("profile")}
-                    to="/"
+                    onClick={() => handleDropActive("deshboard")}
+                    to="/deshboard"
                   >
                     Deshboard
                   </Link>
