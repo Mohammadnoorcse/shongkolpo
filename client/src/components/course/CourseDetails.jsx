@@ -25,7 +25,7 @@ const CourseDetails = () => {
           >
             {/* item-1 */}
 
-            <div className="w-full h-[35rem] videocard">
+            <div className="w-full sm:h-[35rem] h-[25rem] videocard">
               <ReactPlayer
                 url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
                 playing

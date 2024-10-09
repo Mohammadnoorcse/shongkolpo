@@ -138,8 +138,8 @@ const Home = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="container  flex items-center p-4 relative">
-          <div className="flex flex-col gap-4 lg:ml-40 ml-0">
+        <div className="container  flex sm:items-center p-4 relative">
+          <div className="flex flex-col gap-4 lg:ml-40 ml-0 mt-[10rem] sm:mt-0">
             <div className="flex flex-col gap-1 ">
               <div className="flex">
                 {"Classical".split("").map((value, index) => (
@@ -200,7 +200,7 @@ const Home = () => {
           </div>
 
           <div className="absolute bottom-0 right-0 ">
-            <img src={img1} alt="" className="w-auto h-auto" />
+            <img src={img1} alt="" className="xl:w-auto xl:h-auto w-[30rem]" />
           </div>
         </div>
       </div>
@@ -370,10 +370,10 @@ const Home = () => {
                 {/* {tutorialCard.map((value, index) => (
                   <ToturialCard key={index} value={value} index={index} />
                 ))} */}
-                <TeacherCard/>
-                <TeacherCard/>
-                <TeacherCard/>
-                <TeacherCard/>
+                <TeacherCard />
+                <TeacherCard />
+                <TeacherCard />
+                <TeacherCard />
               </div>
             </div>
           </div>
